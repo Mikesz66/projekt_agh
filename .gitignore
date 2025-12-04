@@ -1,0 +1,34 @@
+# --- Data ---
+# Ignore all raw and processed data. The README will explain how to generate it.
+data/raw/
+data/processed/
+
+# --- Python ---
+# Virtual environment (uv uses .venv by default)
+.venv/
+__pycache__/
+wheels/
+*.pyc
+*.pyo
+*.pyd
+*.py[oc]
+*.egg-info
+
+# --- C/C++ ---
+# Compiled object files and executables
+*.o
+*.so
+*.a
+*.dll
+*.exe
+build/
+dist/
+
+# --- IDE/Editor Specific ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Misc ---
+.DS_Store
