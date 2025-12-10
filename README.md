@@ -81,7 +81,7 @@ make test
 ### Input: (Everything is optional)
 The input should be a JSON array of objects, structured similarly to the `Data Structure` above. Example fields you might include:
 - `name`: str
-- `minutes`: int (note: if it's a number for calculations, `int` is better than `str`)
+- `minutes`: int
 - `tags`: list[str]
 - etc...
 
