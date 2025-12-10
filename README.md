@@ -61,3 +61,37 @@ make test
 - `scripts/`: Helper scripts for downloading and processing data.
 - `src/`: Main Python application source code.
 - `tests/`: All automated tests.
+
+
+## Backend
+
+Data:
+id: int
+avg_rating: float
+review_count: int
+minutes: int
+cal: float
+prot: float
+fat: float
+name_clean: str
+ingredients_serialized: str [list separated by `;`]
+tags_serialized: str [list separated by `;`]
+
+Input: (Everything is optional)
+json
+
+name: str
+minutes: str
+tags: list[str]
+ect...
+
+Output:
+json
+
+```json
+[
+  {"id": 123, "accuracy": 0.987},
+  {"id": 456, "accuracy": 0.952},
+  {"id": 789, "accuracy": 0.991}
+]
+
