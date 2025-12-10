@@ -62,31 +62,31 @@ make test
 - `src/`: Main Python application source code.
 - `tests/`: All automated tests.
 
+---
 
 ## Backend
 
-Data:
-id: int
-avg_rating: float
-review_count: int
-minutes: int
-cal: float
-prot: float
-fat: float
-name_clean: str
-ingredients_serialized: str [list separated by `;`]
-tags_serialized: str [list separated by `;`]
+### Data Structure:
+- id: int
+- avg_rating: float
+- review_count: int
+- minutes: int
+- cal: float
+- prot: float
+- fat: float
+- name_clean: str
+- ingredients_serialized: str [list separated by `;`]
+- tags_serialized: str [list separated by `;`]
 
-Input: (Everything is optional)
-json
+### Input: (Everything is optional)
+The input should be a JSON array of objects, structured similarly to the `Data Structure` above. Example fields you might include:
+- `name`: str
+- `minutes`: int (note: if it's a number for calculations, `int` is better than `str`)
+- `tags`: list[str]
+- etc...
 
-name: str
-minutes: str
-tags: list[str]
-ect...
-
-Output:
-json
+### Output:
+The output will be a JSON array of objects, each containing an `id` and its calculated `accuracy`.
 
 ```json
 [
@@ -94,4 +94,5 @@ json
   {"id": 456, "accuracy": 0.952},
   {"id": 789, "accuracy": 0.991}
 ]
+```
 
