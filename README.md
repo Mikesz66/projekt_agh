@@ -81,12 +81,33 @@ make test
 ### Input: (Everything is optional)
 The input should be a JSON array of objects, structured similarly to the `Data Structure` above. Example fields you might include:
 - `name`: str
-- `minutes`: int
+- `minutes_max`: int
 - `tags`: list[str]
 - etc...
 
+#### Example:  
+```json
+
+[
+  {
+    "name": "chicken soup",
+    "minutes_max": 60,
+    "ingredients_liked": [
+      "beef roast",
+      "brown gravy mix"
+    ],
+    "ingredients_disliked": [
+      "milk"
+    ]
+  }
+]
+```
+
+
 ### Output:
 The output will be a JSON array of objects, each containing an `id` and its calculated `accuracy`.
+
+#### Example:  
 
 ```json
 [
