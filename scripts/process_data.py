@@ -110,9 +110,16 @@ recipes.sort_values(by='review_count', ascending=False, inplace=True)
 
 # Dataset A: Search DB (optimized for C)
 search_columns = [
-    'id', 'avg_rating', 'review_count', 'minutes', 
-    'cal', 'prot', 'fat', 
-    'name_clean', 'ingredients_serialized', 'tags_serialized'
+    'id',
+    'avg_rating',
+    'review_count',
+    'minutes',
+    'cal',
+    'prot',
+    'fat',
+    'name_clean',
+    'ingredients_serialized',
+    'tags_serialized',
 ]
 
 recipes[search_columns].to_csv(
@@ -122,7 +129,13 @@ recipes[search_columns].to_csv(
 )
 
 # Dataset B: Display DB (full text)
-display_columns = ['id', 'name', 'description', 'steps', 'ingredients']
+display_columns = [
+    'id',
+    'name',
+    'description',
+    'steps',
+    'ingredients',
+]
 
 recipes[display_columns].to_csv(
     os.path.join(OUTPUT_DIR, 'display_db.csv'), 
