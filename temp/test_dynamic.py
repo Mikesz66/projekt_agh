@@ -3,7 +3,7 @@ import random
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtWidgets import (QApplication, QWidget, QPushButton, QVBoxLayout, 
                              QLabel, QCheckBox)
-from flow_lib import FlowContainer
+from flow_layout import FlowContainer
 
 class ResizableBox(QPushButton):
     """A custom widget that changes its size when clicked."""

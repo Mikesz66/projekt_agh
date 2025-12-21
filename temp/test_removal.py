@@ -3,7 +3,7 @@ import random
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import (QApplication, QWidget, QPushButton, QVBoxLayout, 
                              QLabel, QHBoxLayout, QMessageBox)
-from flow_lib import FlowContainer
+from flow_layout import FlowContainer
 
 class RemovableBox(QLabel):
     """A widget that deletes itself when Right-Clicked."""
