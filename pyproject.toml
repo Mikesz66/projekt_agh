@@ -6,11 +6,9 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "pandas>=2.3.3",
-    "pyqt6>=6.10.0",
+    "pyside6>=6.10.1",
     "tqdm>=4.67.1",
 ]
 
 [dependency-groups]
-dev = [
-    "pytest>=9.0.1",
-]
+dev = ["pytest>=9.0.1"]
