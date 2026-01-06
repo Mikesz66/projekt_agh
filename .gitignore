@@ -3,7 +3,6 @@
 data/raw/
 data/processed/
 .cache/*
-!.cache/recipes_found.json
 
 # --- Python ---
 # Virtual environment (uv uses .venv by default)
